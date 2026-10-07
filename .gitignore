@@ -1,5 +1,6 @@
 .venv/
 .tools/
+.vercel/
 __pycache__/
 *.py[cod]
 .pytest_cache/

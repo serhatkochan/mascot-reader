@@ -7,7 +7,7 @@ import pytest
 
 from scripts.publish_release import PublicationError, publish_release
 
-REPO = "serhatkochan/markdown-to-speech"
+REPO = "serhatkochan/mascot-reader"
 SETUP = "MascotReader-Setup.exe"
 CHECKSUM = SETUP + ".sha256"
 
@@ -50,7 +50,7 @@ def asset(identifier, name, data):
 def current_release(root):
     return {
         "id": 200, "tag_name": "v0.2.0", "draft": False, "prerelease": False,
-        "html_url": "https://github.com/serhatkochan/markdown-to-speech/releases/tag/v0.2.0",
+        "html_url": "https://github.com/serhatkochan/mascot-reader/releases/tag/v0.2.0",
         "assets": [asset(201, SETUP, (root / "dist" / SETUP).read_bytes()),
                    asset(202, CHECKSUM, (root / "dist" / CHECKSUM).read_bytes())],
     }

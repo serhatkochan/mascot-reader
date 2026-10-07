@@ -11,7 +11,8 @@
 <p><strong>Çevrimdışı kullanım · Yerel CPU · Windows uygulaması</strong></p>
 
 <p>
-  <a href="https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe"><strong>Windows için indir</strong></a> ·
+  <a href="https://github.com/serhatkochan/mascot-reader/releases/latest/download/MascotReader-Setup.exe"><strong>Windows için indir</strong></a> ·
+  <a href="https://mascot-reader.serhatkochan.com">Web sitesi</a> ·
   <a href="#kurulum">Kurulum</a> ·
   <a href="#kontroller">Kontroller</a> ·
   <a href="#maskotlar">Maskotlar</a> ·
@@ -43,7 +44,7 @@ Model Windows paketine dahildir. Kullanırken internet, API anahtarı, Python ku
 Hedef sistem **Windows 10 (1809 ve sonrası) / Windows 11, x64**.
 Bu hedef [Qt 6.11'in Windows gereksinimlerine](https://doc.qt.io/qt-6.11/windows.html) dayanır.
 
-1. [MascotReader-Setup.exe dosyasını indir](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe), aç ve kurulum adımlarını tamamla.
+1. [MascotReader-Setup.exe dosyasını indir](https://github.com/serhatkochan/mascot-reader/releases/latest/download/MascotReader-Setup.exe), aç ve kurulum adımlarını tamamla.
 2. Başlat menüsünden veya masaüstü kısayolundan **MascotReader**'ı aç.
 3. Ekranın sağ altındaki maskota tıkla ve bir `.md` veya `.markdown` dosyası seç.
 4. Sesin hazırlanmasını bekle. Hazırlama ilerlemesi gösterilir; bittiğinde oynatma otomatik başlar.
@@ -52,8 +53,8 @@ Kurulum yönetici izni istemeden geçerli Windows kullanıcısına yapılır.
 Varsayılan konum `%LOCALAPPDATA%\Programs\MascotReader`'dır; masaüstü kısayolu
 kurulumda seçilebilir. Python, Qt ve ses modeli uygulamaya dahildir.
 
-[Sürüm sayfası](https://github.com/serhatkochan/markdown-to-speech/releases/latest) ·
-[Kurulum dosyasının SHA256 değeri](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe.sha256)
+[Sürüm sayfası](https://github.com/serhatkochan/mascot-reader/releases/latest) ·
+[Kurulum dosyasının SHA256 değeri](https://github.com/serhatkochan/mascot-reader/releases/latest/download/MascotReader-Setup.exe.sha256)
 
 **Güncelleme:** Maskotta sağ tık → **Çıkış** yap, ardından sürüm sayfasındaki yeni
 `MascotReader-Setup.exe` dosyasını çalıştır. Kurulum mevcut sürümü yeniler;

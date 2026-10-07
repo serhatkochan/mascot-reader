@@ -17,7 +17,7 @@
   #define AppName "MascotReader"
 #endif
 #define AppExe "MascotReader.exe"
-#define ProjectURL "https://github.com/serhatkochan/markdown-to-speech"
+#define ProjectURL "https://github.com/serhatkochan/mascot-reader"
 
 [Setup]
 AppId={{{#AppIdentity}}

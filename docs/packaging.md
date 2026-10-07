@@ -10,7 +10,7 @@ Masaüstü kısayolu varsayılan olarak seçilidir; kurulumda kapatılabilir ve 
 kurulumlarda bu tercih hatırlanır.
 
 Yeni sürüme geçmek için maskotta sağ tık → **Çıkış** yapın ve
-[son sürümün kurulum dosyasını](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe)
+[son sürümün kurulum dosyasını](https://github.com/serhatkochan/mascot-reader/releases/latest/download/MascotReader-Setup.exe)
 çalıştırın. Yeni kurulum mevcut uygulamayı günceller. Aynı Windows kullanıcısının
 maskot seçimi, pencere konumu ve diğer tercihleri korunur.
 Uygulama otomatik güncelleme denetimi yapmaz; yeni kurulum GitHub'dan elle indirilir.

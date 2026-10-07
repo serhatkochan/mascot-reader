@@ -1,0 +1,7 @@
+**
+!landing
+!landing/**
+landing/.vercel
+landing/.env*
+landing/.gitignore
+landing/README.md

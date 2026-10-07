@@ -9,7 +9,7 @@ import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_REPO = "serhatkochan/markdown-to-speech"
+DEFAULT_REPO = "serhatkochan/mascot-reader"
 SETUP_NAME = "MascotReader-Setup.exe"
 MANAGED_ASSET_NAMES = {
     SETUP_NAME, SETUP_NAME + ".sha256",
