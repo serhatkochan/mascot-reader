@@ -1,5 +1,41 @@
 # Doğrulama kaydı
 
+## 0.2.0 kurulum sürümü · 2026-10-07
+
+- Son kaynak koşusunda **204 test geçti**; Ruff denetimi hatasız. Yeni testler
+  sürüm raporunu, Windows uygulama kilidini ve GitHub yayın/temizleme sınırlarını kapsıyor.
+- Son paketlenmiş EXE sınırlı PATH ve ayrı profille, ağ bağlantıları engellenmişken
+  gerçek CPU sesi üretti. Native Windows Qt/FFmpeg oynatma, bölüm atlama,
+  baştan başlatma, durdurma ve on maskot doğrulamaları geçti.
+- Aynı Inno Setup tanımı, ayrı test AppId/adı ve sıkıştırmasız fixture çıktılarıyla
+  gerçek Windows üzerinde kuruldu. Hash'i doğrulanmış gerçek 0.1.0 EXE'den 0.2.0'a
+  yükseltme ve aynı sürümü yeniden kurma geçti. Windows uygulama listesinde tek
+  kayıt kaldı; masaüstü ve Başlat menüsü kısayollarının hedefleri doğrulandı.
+- Güncelleme, gizlenmiş eski uygulamayı Restart Manager ile kapattı; ayrı dizindeki
+  taşınabilir uygulamayı açık bıraktı. Eski manifestteki değişmemiş ve artık kullanılmayan
+  dosyalar silindi; değiştirilmiş eski dosya, kullanıcı belgesi, ek dosya ve tercihler korundu.
+- Türkçe karakterli kurulum dizininde, EXE farklı Unicode harf kasası ve `\\?\`
+  önekiyle açıldı. Açık uygulamayı sessiz kaldırma exit 1 ile durdu; dosyalar ve
+  Windows kaydı korundu. Normal kapanıştan sonra kaldırma exit 0 ile tamamlandı:
+  **3.123 paket dosyası**, manifest, kısayollar ve Windows kaydı kaldırıldı;
+  kullanıcı belgesi, ek dosya, ayrı kullanıcı profili ve tercihler korundu.
+- Bağımsız güncelleme fixture'ında eski dosya adayları toplandıktan sonra kontrollü
+  iptal uygulandı. Eski EXE, manifest, uygulama sürümü ve eski bağımlılık korundu;
+  kurulum tamamlanmadan dosya temizliği çalışmadı.
+- README gerçek Chrome'da açık/koyu masaüstü ve 390 px mobil görünümde incelendi.
+  15 görsel yüklendi; iki animasyon/seçim bölümü başlangıçta açık, kapat-aç çalışıyor.
+  Üstteki GIF dört farklı kare oynatıyor ve masa sabit kalıyor.
+
+Yerel kanıtlar: `build/qaÇİ/report.json`, `build/rqa/rollback-summary.json`,
+`build/verification/final-pytest.log`, `readme-browser-audit.json` ve
+`installer-summary.json`. Test kurulumlarının Windows kayıtları ve kısayolları temizlendi.
+Bu makinedeki doğrulama ayrı temiz Windows 10/11 sanal makine testi değildir.
+Mevcut Qt/FFmpeg test beklemesi son sürümde de aralıklı görüldü; yalnız takılan
+test süreçleri kapatılıp temiz süreçte bütün testler tekrar geçti. Native Windows
+paket ve kurulum içinden ses/oynatma denetimleri de geçti.
+
+## Önceki geliştirme kontrolleri
+
 - Python 3.11.17, CPU PyTorch 2.14.1+cpu, PySide6 6.11.2, EMA Lightning 1.0.1.
 - Masa kayması düzeltmesinden sonra son toplu offscreen koşusunda **158 test geçti**.
   Yeni 30 regresyon, on maskotun 120 karesinde masanın bütün piksel alanını ve

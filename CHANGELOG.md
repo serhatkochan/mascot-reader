@@ -1,5 +1,16 @@
 # Sürüm notları
 
+## 0.2.0 · 2026-10-07
+
+- Windows kullanıcı hesabına kurulan `MascotReader-Setup.exe` dağıtımı.
+- Başlat menüsü ve seçilebilir masaüstü kısayolu; Windows uygulama listesinden kaldırma.
+- Aynı kurulum üzerinden sürüm güncelleme; pencere konumu, maskot seçimi ve tercihlerin korunması.
+- Uygulama açıkken kaldırmanın başlamasını önleyen Windows kilidi; güncelleme sonrası eski uygulama dosyalarının güvenli temizliği.
+- Yeni kurulum doğrulandıktan sonra eski GitHub dağıtım dosyalarını temizleyen yayın betiği.
+- README'nin üstünde gerçek uygulama karelerinden hazırlanan Kıvılcım animasyonu.
+- Maskot animasyonları ve seçim ekranı README'de varsayılan olarak açık.
+- Kurulum, güncelleme, kaldırma ve yerel taşınabilir paketlemeyi açıklayan belgeler.
+
 ## 0.1.0 · 2026-10-07
 
 İlk Windows sürümü.

@@ -7,17 +7,25 @@ import threading
 import wave
 from pathlib import Path
 
+from . import __version__
 from .paths import configure_runtime
 
 
 def main():
     parser = argparse.ArgumentParser(description="Maskotlu Markdown Okuyucu")
+    parser.add_argument("--version-file", metavar="JSON", type=Path)
     parser.add_argument("--smoke-test", metavar="WAV", type=Path)
     parser.add_argument("--screenshot", metavar="PNG", type=Path)
     parser.add_argument("--screenshot-gallery", metavar="PNG", type=Path)
     parser.add_argument("--preview-audio", metavar="WAV", type=Path)
     parser.add_argument("--verify-playback", metavar="WAV", type=Path)
     options = parser.parse_args()
+    if options.version_file:
+        options.version_file.parent.mkdir(parents=True, exist_ok=True)
+        options.version_file.write_text(json.dumps({
+            'version': __version__, 'frozen': getattr(sys, 'frozen', False),
+        }), encoding='utf-8')
+        return 0
     if options.preview_audio and not options.screenshot:
         parser.error('--preview-audio requires --screenshot')
     configure_runtime()
@@ -69,6 +77,10 @@ def main():
 
         QTimer.singleShot(500, capture_gallery)
         return app.exec()
+    if not options.screenshot:
+        from .windows_lifecycle import hold_installation_mutex
+
+        hold_installation_mutex()
     controller = PlaybackController()
     window = MascotWindow(controller, persist_settings=not bool(options.screenshot))
     window.show()

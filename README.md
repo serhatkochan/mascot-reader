@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/mascots/ember.png" width="160" alt="Dizüstü bilgisayarının başındaki turuncu robot Kıvılcım" />
+<img src="docs/assets/mascots/ember.gif" width="160" alt="Dizüstü bilgisayarının başında göz kırpan turuncu robot Kıvılcım" />
 
 <h1>MascotReader</h1>
 
@@ -8,10 +8,10 @@
 
 <p>Windows için Türkçe Markdown okuyucu.<br>EMA Lightning ile bilgisayarında ses üretir; 10 pixel-art maskot sana eşlik eder.</p>
 
-<p><strong>Çevrimdışı kullanım · Yerel CPU · Taşınabilir Windows uygulaması</strong></p>
+<p><strong>Çevrimdışı kullanım · Yerel CPU · Windows uygulaması</strong></p>
 
 <p>
-  <a href="https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-windows-x64.zip"><strong>Windows ZIP'ini indir</strong></a> ·
+  <a href="https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe"><strong>Windows için indir</strong></a> ·
   <a href="#kurulum">Kurulum</a> ·
   <a href="#kontroller">Kontroller</a> ·
   <a href="#maskotlar">Maskotlar</a> ·
@@ -43,27 +43,27 @@ Model Windows paketine dahildir. Kullanırken internet, API anahtarı, Python ku
 Hedef sistem **Windows 10 (1809 ve sonrası) / Windows 11, x64**.
 Bu hedef [Qt 6.11'in Windows gereksinimlerine](https://doc.qt.io/qt-6.11/windows.html) dayanır.
 
-1. [Windows ZIP'ini indir](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-windows-x64.zip) ve arşivin tamamını bir klasöre çıkar.
-2. Çıkan `MascotReader` klasöründeki `MascotReader.exe` dosyasını aç.
+1. [MascotReader-Setup.exe dosyasını indir](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe), aç ve kurulum adımlarını tamamla.
+2. Başlat menüsünden veya masaüstü kısayolundan **MascotReader**'ı aç.
 3. Ekranın sağ altındaki maskota tıkla ve bir `.md` veya `.markdown` dosyası seç.
 4. Sesin hazırlanmasını bekle. Hazırlama ilerlemesi gösterilir; bittiğinde oynatma otomatik başlar.
 
-```text
-MascotReader/
-├── MascotReader.exe        ← Bunu çalıştır
-├── _internal/             ← Uygulamanın yanında kalmalı
-├── README.md
-└── docs/
-```
-
-`_internal` klasörü Python, Qt, model ve diğer çalışma dosyalarını içerir.
-Uygulamayı taşımak için klasörün tamamını taşı.
+Kurulum yönetici izni istemeden geçerli Windows kullanıcısına yapılır.
+Varsayılan konum `%LOCALAPPDATA%\Programs\MascotReader`'dır; masaüstü kısayolu
+kurulumda seçilebilir. Python, Qt ve ses modeli uygulamaya dahildir.
 
 [Sürüm sayfası](https://github.com/serhatkochan/markdown-to-speech/releases/latest) ·
-[ZIP'in SHA256 dosyası](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-windows-x64.zip.sha256)
+[Kurulum dosyasının SHA256 değeri](https://github.com/serhatkochan/markdown-to-speech/releases/latest/download/MascotReader-Setup.exe.sha256)
 
-Yeni sürüme geçerken eski maskotta sağ tık → **Çıkış** yap, ardından yeni ZIP'i ayrı bir klasöre çıkar.
-Maskot seçimin, pencere konumun ve tercihlerin aynı Windows kullanıcısında hatırlanır.
+**Güncelleme:** Maskotta sağ tık → **Çıkış** yap, ardından sürüm sayfasındaki yeni
+`MascotReader-Setup.exe` dosyasını çalıştır. Kurulum mevcut sürümü yeniler;
+aynı Windows kullanıcısının maskot seçimi, pencere konumu ve tercihleri korunur.
+Uygulama güncellemeleri otomatik denetlemez; yeni sürümü GitHub'dan indirip kurarsın.
+
+**Kaldırma:** Windows Ayarlar → **Uygulamalar** bölümünde veya Denetim Masası →
+**Programlar ve Özellikler** ekranında **MascotReader**'ı seçip **Kaldır**'a tıkla.
+Uygulama açıksa kaldırıcı önce maskotta veya tepsi simgesinde sağ tık → **Çıkış**
+yapmanı ister; ardından **Tamam** ile devam edebilirsin.
 
 ## Kontroller
 
@@ -127,7 +127,7 @@ Seçimin hemen uygulanır ve sonraki açılışta hatırlanır. Maskot değişti
 Her maskot boşta göz kırpar, ses hazırlanırken yazar, okurken konuşur.
 Animasyon boyunca masalar aynı yerde kalır.
 
-<details>
+<details open>
 <summary><strong>10 maskotun animasyonlarını izle</strong></summary>
 
 <p><img src="docs/assets/mascot-animations.gif" width="940" alt="On maskotun gerçek uygulama çiziminden alınan boşta, hazırlama ve konuşma animasyonları" /></p>
@@ -135,7 +135,7 @@ Animasyon boyunca masalar aynı yerde kalır.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Uygulamadaki maskot seçim ekranını gör</strong></summary>
 
 <p><img src="docs/assets/mascot-chooser.png" width="760" alt="Maskot seçim ekranı: iki satırda on karakter ve seçili Kıvılcım" /></p>
@@ -194,6 +194,7 @@ py -3.11 -m venv .venv
 | markdown-it-py | Markdown ayrıştırma |
 | QMediaPlayer + QAudioOutput | Oynatma, duraklatma ve konuma atlama |
 | PyInstaller `onedir` | Modeli içeren taşınabilir Windows paketi |
+| Inno Setup | Kullanıcıya özel Windows kurulumu, güncelleme ve kaldırma |
 
 Bağımlılıkların denenmiş sürümleri `requirements-lock.txt` içinde sabitlenmiştir.
 Model indirme betiği `resources/model-manifest.json` içindeki sürümü, dosya boyutlarını ve SHA256 değerlerini denetler.
@@ -207,16 +208,27 @@ powershell -ExecutionPolicy Bypass -File scripts\build_windows.ps1
 ```
 
 Hazır model önbelleğiyle çevrimdışı derlemek için son komuta `-SkipModelDownload` ekle.
-Çıktı `dist/MascotReader-windows-x64.zip` ve yanındaki SHA256 dosyasıdır.
+Bu adım `dist/MascotReader` uygulama klasörünü, `dist/MascotReader-windows-x64.zip`
+arşivini ve yanındaki SHA256 dosyasını oluşturur. Setup EXE için Inno Setup'ı kur
+ve derleyicinin yolunu ver:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\build_installer.ps1 -Iscc "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
+```
+
+`ISCC.exe` yolunu kendi Inno Setup kurulumuna göre değiştir.
+Çıktı `dist/MascotReader-Setup.exe` ve `dist/MascotReader-Setup.exe.sha256` dosyalarıdır.
 Yalnız README, belgeler veya README görselleri değiştiyse mevcut EXE ile paketi yenileyebilirsin:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts\package_windows.py
 ```
 
+Ardından Setup EXE'yi yenilemek için kurulum derleme komutunu tekrar çalıştır.
+
 [Paketleme ayrıntıları](docs/packaging.md) · [Doğrulama kayıtları ve test sınırları](docs/verification.md)
 
-Doğrulama kaydındaki son uygulama koşusunda **158 test** geçti; 10 maskotun **120 animasyon karesi** için masa sabitliği kontrol edildi.
+Son kaynak koşusunda **204 test** geçti; 10 maskotun **120 animasyon karesi** için masa sabitliği ve kurulum/yayın korumaları kontrol edildi.
 Paketlenmiş EXE ayrıca ağ bağlantıları engellenmiş gerçek model ve oynatma denetimlerinden geçti.
 Ayrı temiz Windows kurulumu ve fiziksel çoklu monitör kontrolünün durumu doğrulama belgesinde açıklanır.
 
