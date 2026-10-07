@@ -1,0 +1,118 @@
+{
+  "image": "cloud.png",
+  "generator": "built-in image_gen",
+  "original": true,
+  "width": 1448,
+  "height": 1086,
+  "columns": 4,
+  "rows": 3,
+  "cell_width": 362,
+  "cell_height": 362,
+  "transparency": "RGBA alpha preserved from generation",
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_ms": 180,
+      "baseline_offset_y": 0,
+      "source_y": 58,
+      "source_height": 320,
+      "destination_y": 33,
+      "frame_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          11,
+          0
+        ]
+      ]
+    },
+    "preparing": {
+      "row": 1,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_ms": 180,
+      "baseline_offset_y": 0,
+      "source_y": 381,
+      "source_height": 320,
+      "destination_y": 33,
+      "frame_offsets": [
+        [
+          0,
+          -1
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          9,
+          0
+        ]
+      ]
+    },
+    "speaking": {
+      "row": 2,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_ms": 160,
+      "baseline_offset_y": 0,
+      "source_y": 711,
+      "source_height": 320,
+      "destination_y": 33,
+      "frame_offsets": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    }
+  },
+  "render_note": "Use nearest-neighbor scaling. Construct each source cell using source_y/source_height (or row * cell_height) and destination_y. Apply frame_offsets[column] to the animated region above stationary_desk_y. Draw the region below that boundary from idle frame 0 at its original position. baseline_offset_y is zero because alignment is already included in the frame. Source PNG pixels are unchanged.",
+  "source": "Generated original Bulut mascot using the orange robot sheet only as style reference.",
+  "stationary_desk_y": 294
+}

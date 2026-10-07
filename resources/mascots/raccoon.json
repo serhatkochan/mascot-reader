@@ -1,0 +1,109 @@
+{
+  "image": "raccoon.png",
+  "generator": "built-in image_gen",
+  "original": true,
+  "width": 1448,
+  "height": 1086,
+  "columns": 4,
+  "rows": 3,
+  "cell_width": 362,
+  "cell_height": 362,
+  "transparency": "RGBA alpha preserved from generation",
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_ms": 180,
+      "baseline_offset_y": 0,
+      "frame_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          21,
+          0
+        ],
+        [
+          32,
+          1
+        ]
+      ]
+    },
+    "preparing": {
+      "row": 1,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_ms": 180,
+      "baseline_offset_y": 0,
+      "frame_offsets": [
+        [
+          1,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          21,
+          10
+        ],
+        [
+          31,
+          10
+        ]
+      ]
+    },
+    "speaking": {
+      "row": 2,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_ms": 160,
+      "baseline_offset_y": 0,
+      "frame_offsets": [
+        [
+          1,
+          18
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          21,
+          17
+        ],
+        [
+          31,
+          17
+        ]
+      ]
+    }
+  },
+  "render_note": "Use nearest-neighbor scaling. Construct each source cell using source_y/source_height (or row * cell_height) and destination_y. Apply frame_offsets[column] to the animated region above stationary_desk_y. Draw the region below that boundary from idle frame 0 at its original position. baseline_offset_y is zero because alignment is already included in the frame. Source PNG pixels are unchanged.",
+  "source": "Generated original gray raccoon Piko with charcoal mask and striped tail, slate laptop and brown desk.",
+  "stationary_desk_y": 277
+}

@@ -1,0 +1,12 @@
+EMA Lightning model
+Repository: https://huggingface.co/canberkkkkkk/ema-lightning
+Revision: 7a6ba1ad216bb2f1da9863f80ac8770a6a807632
+Author: canberkkkkkk / Canberk
+License: Apache License, Version 2.0
+
+The ema.pt, decoder.pt, and config.json files are redistributed unmodified.
+Model license information is published in the model card at the pinned revision.
+Source package: https://github.com/canberk7/ema-lightning
+
+The portable application also includes installed dependency license files and
+a dependency version inventory in its licenses directory.

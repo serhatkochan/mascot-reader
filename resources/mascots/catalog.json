@@ -1,0 +1,55 @@
+{
+  "default": "ember",
+  "mascots": [
+    {
+      "id": "ember",
+      "name": "Kıvılcım",
+      "metadata": "ember.json"
+    },
+    {
+      "id": "frost",
+      "name": "Buzkuşu",
+      "metadata": "frost.json"
+    },
+    {
+      "id": "fern",
+      "name": "Yaprak",
+      "metadata": "fern.json"
+    },
+    {
+      "id": "neko",
+      "name": "Mırmır",
+      "metadata": "neko.json"
+    },
+    {
+      "id": "cloud",
+      "name": "Bulut",
+      "metadata": "cloud.json"
+    },
+    {
+      "id": "cosmo",
+      "name": "Kozmo",
+      "metadata": "cosmo.json"
+    },
+    {
+      "id": "panda",
+      "name": "Panda",
+      "metadata": "panda.json"
+    },
+    {
+      "id": "axolotl",
+      "name": "Nori",
+      "metadata": "axolotl.json"
+    },
+    {
+      "id": "dragon",
+      "name": "Luna",
+      "metadata": "dragon.json"
+    },
+    {
+      "id": "raccoon",
+      "name": "Piko",
+      "metadata": "raccoon.json"
+    }
+  ]
+}

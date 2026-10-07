@@ -1,0 +1,21 @@
+Qt for Python / PySide6 and Shiboken6
+Copyright The Qt Company Ltd. and other contributors.
+The bundled Qt runtime uses the LGPL version 3 license option.
+The LGPL-3.0 and GPL-3.0 license texts are included in this directory.
+
+Qt and PySide6 DLLs are included as separate shared libraries in _internal.
+Users may replace these libraries with compatible modified versions.
+
+Upstream source archives for the included Qt and Qt for Python releases:
+https://download.qt.io/official_releases/qt/
+https://download.qt.io/official_releases/QtForPython/
+https://code.qt.io/cgit/qt/qtbase.git/
+https://code.qt.io/cgit/pyside/pyside-setup.git/
+
+Qt Multimedia also bundles FFmpeg shared libraries (libavcodec/libavformat
+major version 61). FFmpeg's LGPL 2.1 text and upstream LICENSE.md are included.
+FFmpeg source: https://github.com/FFmpeg/FFmpeg/tree/release/7.1
+https://ffmpeg.org/download.html
+
+The exact bundled dependency versions and additional license notices are
+listed in dependency-inventory.json and dependencies/.

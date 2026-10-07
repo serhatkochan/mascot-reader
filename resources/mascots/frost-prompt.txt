@@ -1,0 +1,12 @@
+Use case: stylized-concept.
+Asset type: production sprite sheet for a tiny Windows desktop mascot, displayed around 150 pixels wide.
+The input robot sprite sheet is ONLY a visual family/style and grid-format reference. Create a distinct original character described below, not another robot.
+Subject: A tiny adorable ice-blue owl with large round expressive dark eyes, pale snowy face disk, icy blue feather tufts, short broad wings reaching laptop, small orange beak. Friendly wise owl silhouette with clear pointed ear tufts; blue/cream palette.
+Scene: character sits behind its small open slate-gray laptop on the same simple dark-brown desk. Laptop has no mark or logo. Character is warm, friendly and appealing at tiny desktop scale.
+Composition: ONE transparent sprite sheet, EXACTLY 4 columns by 3 rows, 12 equal square cells, canvas ratio EXACTLY4:3. If dimensions possible use1024×768. Every frame same character scale and coordinates; desk bottom baseline and laptop fixed in all12cells. Generous transparent margins; no frame overlaps or cell boundaries.
+Top row frames: resting with eyes open, eyes half closed, eyes fully closed blinking, eyes open. Same pose and desk.
+Middle row frames: preparing/typing with awake eyes, alternating tiny hand/paw taps on laptop across4frames. Small charming ear/antenna/tail motion is okay, but head laptop desk baseline must stay fixed.
+Bottom row frames: speaking, closed friendly smile, small open mouth/beak, wider open mouth/beak, small open mouth/beak. Same scale and pose.
+Style: crisp chunky pixel clusters, classic clean16-bit game sprite, dark-brown/charcoalpixel outlines, restricted cohesive palette, no blur, no gradients, no painterly anti-aliasededges, no3D, no realistictextures, no vector appearance.
+Background: genuine transparent alpha outside the character/laptop/desk. Absolutely no bakedcheckerboard, no black/whitebackdrop.
+Constraints: spritegridonly. NoUIbuttons, controls, labels, text, numbers, watermarks, logos, extra characters, background, shadows, unrelatedprops. All12sprites equal size and strongly registered. Character must look distinctly different from referencedorange robot.
